@@ -29,6 +29,12 @@
             out.println(fraccionA+" * "+fraccionB+" = "+fraccionA.multiplicacion(fraccionB));
             out.println("<br>");
             out.println(fraccionA+" / "+fraccionB+" = "+fraccionA.division(fraccionB));
+            out.println("<br>");
+            if(fraccionA.resta(fraccionB).getNum()>0)
+                out.println(fraccionA+" > "+fraccionB);
+            else if(fraccionA.resta(fraccionB).getNum()==0)
+                out.println(fraccionA+" == "+fraccionB);
+            else out.println(fraccionA+" < "+fraccionB);
         %>
     </body>
 </html>
